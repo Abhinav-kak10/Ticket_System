@@ -1,0 +1,211 @@
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7.5rem;
+    flex-wrap: wrap;
+    gap: 2.5rem 6.25rem;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 1rem 1.25rem;
+    }
+  }
+  
+  /* Logo styles */
+  .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: stretch;
+    gap: 0.438rem;
+    font-size: 2.5rem;
+    color: rgb(24, 78, 127);
+    font-weight: 600;
+    white-space: nowrap;
+    width: 11rem;
+  }
+  
+  .logo img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 3.5rem;
+    flex-shrink: 0;
+  }
+  
+  /* Navigation styles */
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .nav-button.ghost {
+    background: none;
+    border: none;
+    color: rgb(54, 54, 74);
+  }
+  
+  .nav-button.ghost:hover {
+    color: rgb(24, 78, 127);
+  }
+  
+  .nav-button.primary {
+    background-color: rgb(36, 71, 121);
+    color: white;
+    border: none;
+  }
+  
+  .nav-button.primary:hover {
+    background-color: rgb(24, 78, 127);
+  }
+  
+  /* Main content styles */
+  .main {
+    padding: 2rem 1rem;
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(24, 78, 127);
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: rgb(54, 54, 74);
+    max-width: 42rem;
+    margin: 0 auto 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Feature grid */
+  .features {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(24, 78, 127, 0.2);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(24, 78, 127);
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card p {
+    color: rgb(54, 54, 74);
+  }
+  
+  /* CTA section */
+  .cta {
+    padding: 4rem 2rem;
+    background-color: rgba(24, 78, 127, 0.05);
+    border-radius: 1rem;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: rgb(24, 78, 127);
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta p {
+    font-size: 1.125rem;
+    color: rgb(54, 54, 74);
+    max-width: 42rem;
+    margin: 0 auto 2rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .button.primary {
+    background-color: rgb(36, 71, 121);
+    color: white;
+    border: none;
+  }
+  
+  .button.primary:hover {
+    background-color: rgb(24, 78, 127);
+  }
+  
+  .button.outline {
+    background: none;
+    border: 1px solid rgb(36, 71, 121);
+    color: rgb(36, 71, 121);
+  }
+  
+  .button.outline:hover {
+    background-color: rgba(36, 71, 121, 0.1);
+  }
+  
+  .button.large {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+  
